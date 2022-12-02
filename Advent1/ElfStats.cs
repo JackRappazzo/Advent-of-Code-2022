@@ -15,9 +15,9 @@ namespace Advent1
             Stats = CalorieParser.Parse(input);
         }
 
-        public int GetHighestCalorie()
+        public int GetHighestCalories(int top = 1)
         {
-            return Stats.OrderByDescending(e => e.Sum()).First().Sum();
+            return Stats.OrderByDescending(e => e.Sum()).Take(top).Select(e => e.Sum()).Sum();
         }
 
 

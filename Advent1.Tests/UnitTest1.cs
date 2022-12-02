@@ -28,13 +28,22 @@ namespace Advent1.Tests
         }
 
         [TestMethod]
-        public void TestMinder()
+        public void TestMinderSingle()
         {
             ElfStats stats = new ElfStats(input);
-            var highest = stats.GetHighestCalorie();
+            var highest = stats.GetHighestCalories();
 
             Assert.IsTrue(highest == 60);
 
+        }
+
+        [TestMethod]
+        public void TestMinderTwo()
+        {
+            ElfStats stats = new ElfStats(input);
+            var highest = stats.GetHighestCalories(2);
+
+            Assert.IsTrue(highest == 72);
         }
     }
 }
