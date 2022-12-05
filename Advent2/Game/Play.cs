@@ -11,7 +11,7 @@ namespace Advent2.Game
         Rock, Paper, Scissors
     }
 
-    enum Result {  Win, Lose, Draw, Error };
+    public enum Result {  Win, Lose, Draw, Error };
 
     public class Play
     {
