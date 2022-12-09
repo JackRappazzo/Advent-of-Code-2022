@@ -40,11 +40,11 @@ namespace Advent3
             return PriorityEvaluator.GetPriority(badge);
         }
 
-    private IEnumerable<char> GetFullContents(Rucksack ruck)
-    {
-        return ruck.FirstCompartment.Concat(ruck.SecondCompartment);
+        private IEnumerable<char> GetFullContents(Rucksack ruck)
+        {
+            return ruck.FirstCompartment.Concat(ruck.SecondCompartment);
+        }
+
+
     }
-
-
-}
 }
