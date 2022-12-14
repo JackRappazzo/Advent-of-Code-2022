@@ -34,7 +34,7 @@ namespace Advent5
             IEnumerable<char> shift = from.TakeLast(instr.Quantity);
             from = from.SkipLast(instr.Quantity).ToArray();
 
-            to = to.Concat(shift.Reverse()).ToArray();
+            to = to.Concat(shift).ToArray();
 
             _tracks[instr.TrackFrom - 1] = from;
             _tracks[instr.TrackTo - 1] = to;
