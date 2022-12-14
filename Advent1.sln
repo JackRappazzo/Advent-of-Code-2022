@@ -3,20 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advent1", "Advent1\Advent1.csproj", "{FE37F4AC-E6DA-41DC-912F-2E54B577C9CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advent1", "Advent1\Advent1.csproj", "{FE37F4AC-E6DA-41DC-912F-2E54B577C9CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advent1.Tests", "Advent1.Tests\Advent1.Tests.csproj", "{FCBE2997-859B-4171-808A-A05534D373F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advent1.Tests", "Advent1.Tests\Advent1.Tests.csproj", "{FCBE2997-859B-4171-808A-A05534D373F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advent2", "Advent2\Advent2.csproj", "{5A48B05D-F21D-49AB-BD5D-6FE905CEA116}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advent2", "Advent2\Advent2.csproj", "{5A48B05D-F21D-49AB-BD5D-6FE905CEA116}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advent3", "Advent3\Advent3.csproj", "{A9C4257F-C589-4516-9B7B-59DE0E52D678}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advent3", "Advent3\Advent3.csproj", "{A9C4257F-C589-4516-9B7B-59DE0E52D678}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advent4", "Advent4\Advent4.csproj", "{9E0ECC35-B15E-478D-AE0D-3F8573CF54A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advent4", "Advent4\Advent4.csproj", "{9E0ECC35-B15E-478D-AE0D-3F8573CF54A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advent4.Tests", "Advent4.Tests\Advent4.Tests.csproj", "{80AB8F5D-5B7E-4058-A0F1-C5469A8D0D86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advent4.Tests", "Advent4.Tests\Advent4.Tests.csproj", "{80AB8F5D-5B7E-4058-A0F1-C5469A8D0D86}"
 	ProjectSection(ProjectDependencies) = postProject
 		{9E0ECC35-B15E-478D-AE0D-3F8573CF54A7} = {9E0ECC35-B15E-478D-AE0D-3F8573CF54A7}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advent5", "Advent5\Advent5.csproj", "{E7372822-A699-48A5-990F-0D1E468D37FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +50,10 @@ Global
 		{80AB8F5D-5B7E-4058-A0F1-C5469A8D0D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80AB8F5D-5B7E-4058-A0F1-C5469A8D0D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80AB8F5D-5B7E-4058-A0F1-C5469A8D0D86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7372822-A699-48A5-990F-0D1E468D37FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7372822-A699-48A5-990F-0D1E468D37FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7372822-A699-48A5-990F-0D1E468D37FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7372822-A699-48A5-990F-0D1E468D37FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
