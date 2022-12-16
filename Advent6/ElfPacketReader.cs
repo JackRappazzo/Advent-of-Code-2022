@@ -20,7 +20,21 @@ namespace Advent6
             int count = 3;
             while (!startFound && count < _packet.Length)
             {
-                startFound = IsMarker(_packet, count);
+                startFound = IsPacketStart(_packet, count);
+                count++;
+            }
+            if (!startFound)
+                return -1;
+            else return count;
+        }
+
+        public int GetMessageStart(int position = 0)
+        {
+            bool startFound = false;
+            int count = position;
+            while (!startFound && count < _packet.Length)
+            {
+                startFound = IsMessageStart(_packet, count);
                 count++;
             }
             if (!startFound)
@@ -29,11 +43,11 @@ namespace Advent6
         }
 
 
-        bool IsMarker(string input, int position)
+        bool IsMarker(string input, int position, int size = 4)
         {
-            if (position < 3)
-                throw new ArgumentOutOfRangeException("Position must be greater than three");
-            string segment = input.Substring(position - 3, 4);
+            if (position < (size-1))
+                throw new ArgumentOutOfRangeException($"Position must be greater than {size -1}");
+            string segment = input.Substring(position - (size-1), size);
 
             for (int i = 0; i < segment.Length; i++)
             {
@@ -49,6 +63,15 @@ namespace Advent6
 
         }
 
+        bool IsPacketStart(string input, int position)
+        {
+            return IsMarker(input, position, 4);
+        }
+
+        bool IsMessageStart(string input, int position)
+        {
+            return IsMarker(input, position, 14);
+        }
 
 
 

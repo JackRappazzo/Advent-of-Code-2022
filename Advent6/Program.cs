@@ -6,5 +6,6 @@ Console.WriteLine("Hello, radio operator!");
 Console.WriteLine("Tuning...");
 ElfPacketReader reader = new ElfPacketReader(Resource.Input);
 Console.WriteLine("Start of stream: " + reader.GetStart());
+Console.WriteLine("Start of message: " + reader.GetMessageStart(reader.GetStart()));
 Console.WriteLine("Press any key to finish");
 Console.ReadKey();
